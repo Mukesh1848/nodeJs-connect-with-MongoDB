@@ -1,8 +1,11 @@
 import express from 'express';
 const app = express();
 const port = process.env.PORT || "3000";
+// const DATABASE_URL = "mongodb://localhost:27017/databasename";
 import mongoose from 'mongoose';
 import connectdb from './db/connectdb.js'
+
+
 // All import for Reading Document ----------------------------
 // import createDoc from './models/student.js';
 // import {getAllDoc} from './models/retreive-read.js';
@@ -34,12 +37,12 @@ import connectdb from './db/connectdb.js'
 
 //1. using variable for connecting database ----------------------------------
 
-// const DATABASE_URL = "mongodb://localhost:27017/mongodbdatabase";
+
 
 //2. calling function to connecting databse -------------------------
 
-//3. connectdb(DATABASE_URL);  -------------------
- connectdb();   
+3. connectdb(DATABASE_URL);  -------------------
+//  connectdb();   
 
 //4.  create and save document  ----------------------- 
 // createDoc();
