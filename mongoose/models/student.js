@@ -13,7 +13,7 @@ const studentSchema= new mongoose.Schema({
 })
 
 // compiling schema 
-const studentModel = mongoose.model('mongodbdata',studentSchema);
+const studentModel = mongoose.model('collectionName',studentSchema);
 
 
 const createDoc = async() =>{
